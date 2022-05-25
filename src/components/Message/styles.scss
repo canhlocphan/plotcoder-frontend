@@ -15,6 +15,9 @@
     flex-direction: row;
     justify-content: flex-end;
   }
+  .message {
+    font-family: Arial, Helvetica, sans-serif;
+  }
 }
 .message-respone-box-wrapper {
   display: flex;
@@ -33,33 +36,44 @@
     flex-direction: row;
     justify-content: flex-start;
   }
+  .message {
+    font-family: "Courier New", Courier, monospace;
+  }
 }
 
 .message-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  overflow: hidden;
   margin-bottom: 30px;
   .message-user-display-name {
-    width: 180px;
+    overflow: hidden;
+    max-width: 250px;
     background-color: #1fc20f;
-    padding: 5px;
+    padding: 5px 50px 5px 10px;
+    font-family: "Courier New", Courier, monospace;
     font-weight: bold;
     font-size: 14px;
-    color: #cccccc;
+    color: rgb(38, 37, 37);
   }
   .message-wrapper-inner {
     border: 2px solid #1fc20f;
-    width: 300px;
+    min-width: 300px;
+    max-width: 400px;
+    height: auto;
     padding: 20px;
     .message {
+      word-break: break-word;
+      font-family: "Courier New", Courier, monospace;
       font-size: 16px;
       color: #1fc20f;
     }
   }
   .time {
-    padding-top: 3px;
-    font-size: 12px;
+    padding-top: 5px;
+    font-family: "Courier New", Courier, monospace;
+    font-size: 13px;
     color: #1fc20f;
   }
 }

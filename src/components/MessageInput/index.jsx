@@ -17,7 +17,7 @@ const MessageInput = ({ messageList, setMessageList }) => {
 			console.log(newList);
 			setMessageList(newList);
 			setValue("");
-			setResult("Phan Cảnh Lộc");
+			setResult("plot.show(a,b,c)");
 		}
 	};
 	

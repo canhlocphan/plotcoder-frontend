@@ -1,0 +1,12 @@
+.set-displayname-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  .set-displayname {
+    font-family: "Courier New", Courier, monospace;
+    font-size: 16px;
+    color: #1fc20f;
+  }
+}
