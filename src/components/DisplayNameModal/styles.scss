@@ -1,0 +1,59 @@
+.ant-modal-content {
+  .ant-modal-header {
+    background-color: #525552;
+
+    .ant-modal-title {
+      font-family: "Courier New", Courier, monospace;
+      color: white;
+    }
+  }
+
+  .ant-modal-body {
+    background-color: #525552;
+
+    .displayname-input-wrapper {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      height: 70px;
+      border: 1px solid #1fc20f;
+      ;
+
+      input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        padding: 10px 10px 10px 20px;
+        font-family: "Courier New", Courier, monospace;
+        font-size: 16px;
+        color: #1fc20f;
+        ;
+
+        &:focus {
+          outline: none;
+          color: #1fc20f;
+          ;
+        }
+      }
+    }
+  }
+
+  .ant-modal-footer {
+    background-color: #525552;
+    border-top: none;
+    text-align: center;
+
+    .ant-btn-primary {
+      border-color: #1fc20f;
+      background: transparent;
+      padding: 5px 20px 5px 20px;
+      font-family: "Courier New", Courier, monospace;
+      color: #1fc20f;
+
+      &:hover {
+        background: #666464;
+        font-weight: bold;
+      }
+    }
+  }
+}
