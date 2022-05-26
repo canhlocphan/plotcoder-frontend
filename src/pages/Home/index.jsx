@@ -10,13 +10,14 @@ import "./styles.scss";
 
 const Home = () => {
   const [messageList, setMessageList] = useState([]);
+  const [displayName, setDisplayName] = useState("");
 
   return (
     <div className="home-wrapper">
-      <MessageContainer messageList={messageList} />
-      <SetDisplayName />
+      <MessageContainer {...{ displayName, messageList }} />
+      <SetDisplayName displayName={displayName} />
       <MessageInput {...{ messageList, setMessageList }} />
-      <DisplaynameModal />
+      <DisplaynameModal {...{ setDisplayName }} />
     </div>
   );
 };

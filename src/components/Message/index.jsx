@@ -4,7 +4,7 @@ import moment from "moment";
 // others
 import "./styles.scss";
 
-const Message = ({ type, message, name }) => (
+const Message = ({ type, message, displayName }) => (
   <div
     className={
       type === 1 ? "message-box-wrapper" : "message-respone-box-wrapper"
@@ -13,7 +13,7 @@ const Message = ({ type, message, name }) => (
     <div className="message-wrapper">
       <div className="message-user-display-name-wrapper">
         <div className="message-user-display-name">
-          {type === 1 ? "Phan Cảnh Lộc" : "PlotCoder"}
+          {type === 1 ? displayName : "PlotCoder"}
         </div>
       </div>
       <div className="message-wrapper-inner">

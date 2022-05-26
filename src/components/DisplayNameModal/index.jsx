@@ -4,14 +4,14 @@ import { Modal } from "antd";
 // others
 import "./styles.scss";
 
-const DisplaynameModal = () => {
+const DisplaynameModal = ({ setDisplayName }) => {
   const [isModalVisible, setIsModalVisible] = useState(true);
   const [value, setValue] = useState("");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
     const text = value.trim();
-    console.log(text);
+    setDisplayName(text);
     setIsModalVisible(false);
   };
 
@@ -38,6 +38,7 @@ const DisplaynameModal = () => {
           placeholder="Please enter your username"
           className="displayname-input"
           value={value}
+          maxLength={32}
           onSubmit={handleSubmit}
           onChange={handleChange}
         />
